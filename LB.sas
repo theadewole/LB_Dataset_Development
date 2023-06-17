@@ -405,4 +405,10 @@ PROC COPY IN=work OUT=mysnip;
 RUN;
 
 
+/*Exporting Final Dataset to Spreadsheet Format*/
+PROC EXPORT DATA=work.LB OUTFILE="/home/u63305936/LB_Dataset.xlsx"
+	DBMS=XlSX
+	REPLACE;
+	SHEET="LB";
+RUN;
 
