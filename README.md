@@ -39,3 +39,4 @@
 |VISIT |Visit Name |Char|if visitd eq "SCREENING" then visit="SCREENING"; 	else if visitd eq "SCREENING_R.1" then visit=" SCREENING (DAY -28 TO DAY -1):	UNSCHEDULED 1"; 	else if visitd eq "SCREENING_R.2" then visit="Screening (Day -28 To Day -1): Unscheduled 2";	else if visitd eq "WEEK 2" then visit="VISIT 2 (WEEK 2)";	else if visitd eq "MONTH 1" then visit="VISIT 2 (MONTH 1)";	else if visitd eq "MONTH 1_R.1" then visit="VISIT 2 (MONTH 1): UNSCHEDULED 1"; ……|
 |LBDTC| Date/Time of Specimen Collection |Char |(ISO8601 format)|
 
+[Spreadsheet File of the Final Dataset](https://drive.google.com/drive/folders/1R_A0guMTS2K57xdHW5H9LwUrm6c4ZEKs) 
