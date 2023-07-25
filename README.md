@@ -36,5 +36,5 @@
 |LBDY| Study Day of Specimen Collection|Num |if LBDTC >= RFDTC then LBDY = LBDT-RFSTDT|
 
 ## Output 	
-- [Programs](https://github.com/theadewole/LB_Dataset_Development/blob/main/LB.sas)
+- [Program](https://github.com/theadewole/LB_Dataset_Development/blob/main/LB.sas)
 - [Spreadsheet File of the Final Dataset](https://docs.google.com/spreadsheets/d/1ruB-mbZYnjm60qy-rXbb-9KeiKL9lmns/edit?usp=sharing&ouid=117399581833546938372&rtpof=true&sd=true) 
