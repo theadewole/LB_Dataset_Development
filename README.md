@@ -1,7 +1,7 @@
 # LB Dataset Development
 - Project Title: LB Dataset Development  
 - Description: Development of SDTM dataset (LB) by using raw datasets
-- SAS VERSION: 9.1.3
+- SAS VERSION: SAS STUDIO
 ## Inputs
 	DM.SAS7bdat (Demographics SDTM dataset) 
 	LAB.SAS7bdat (Raw Dataset)
