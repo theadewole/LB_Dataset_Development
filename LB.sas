@@ -33,6 +33,12 @@ DATA LB1    (DROP=pno subject);
 RUN;
 
 /*Creating LBTEST and LBTESTCD*/
+*Looking at the distinct values in the Param variable to specify LBTEST and LBTESTCD;
+Proc sql;
+Select distinct(param)
+from lb1;
+Quit;
+
 DATA LB2;
 	LENGTH LBTEST $40 LBTESTCD $8; 
 	SET LB1;
