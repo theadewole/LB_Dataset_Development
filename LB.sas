@@ -349,7 +349,7 @@ DATA LB10;
 	IF LBDT NE . AND RFDTC NE . AND LBDT LE RFDTC AND LBSTRESN NE . THEN LBBLFL='Y';
 RUN;
 
-/*Specifying Visit Number*/
+/*Specifying sequence Number*/
 PROC SORT DATA=LB10  OUT=LB10_1;
 	BY SUBJID LBTESTCD LBDT Visitd;
 RUN;
