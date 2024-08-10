@@ -39,6 +39,7 @@ Select distinct(param)
 from lb1;
 Quit;
 
+*Using the SDTM Terminology_New external document to map the LBTEST and LBTESTCD;
 DATA LB2;
 	LENGTH LBTEST $40 LBTESTCD $8; 
 	SET LB1;
