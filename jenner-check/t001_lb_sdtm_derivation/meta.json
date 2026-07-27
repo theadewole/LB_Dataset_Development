@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_lb_sdtm_derivation",
+  "source_file": "LB.sas",
+  "source_blob_sha": "c82357da8ce2026a0a13fbe64adfafc968d56d07",
+  "source_commit": "c3deb9dc5f4762208fb3d17913b230e627f3a625",
+  "notes": "LB.sas derives the CDISC SDTM Laboratory Test (LB) domain end-to-end: inner-joins raw LAB to DM, maps PARAM to LBTEST/LBTESTCD, derives LBCAT from a SUBSTR of LABT_, standardizes result/unit/range vars, flags LBNRIND, builds LBDRVFL, resolves VISIT via a PROC FORMAT, derives LBDTC/LBDY from date informats, then computes VISITNUM/LBSEQ via first./last. BY-group logic and assembles the final 24-var LB dataset. Substitution: the external MYSNIP library ('/home/u63305936/...' SAS OnDemand path) is replaced by two inline datalines DATA steps building mysnip.lab (13 rows across 3 subjects/several visits, covering the mapped PARAM values and both HEMATOLOGY/CHEMISTRY/URINALYSIS categories) and mysnip.dm (3 subjects); the hardcoded PROC EXPORT OUTFILE path is rewritten to a relative ./LB_Dataset.xlsx. Derivation logic is byte-identical to the author's. Reproducible across two POSTs. exit_code 1 comes from a benign upstream WARNING (DATA LB6 (DROP=Visit) names Visit, the variable is Visitd) that real SAS 9.4 also emits; not a Jenner bug."
+}

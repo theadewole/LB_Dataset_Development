@@ -1,0 +1,17 @@
+{
+  "_captured_at": "2026-07-27T18:50:00Z",
+  "_captured_run_id": "r_85ccfcbbe9a541469d63c18f11a3f9c7",
+  "status": "ok",
+  "exit_code": 1,
+  "log_contains": [
+    "NOTE: Table LB created.",
+    "NOTE: Copying LB to MYSNIP.",
+    "NOTE: 1 member(s) copied.",
+    "NOTE: Exported 13 rows to ./LB_Dataset.xlsx."
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": ["The variable VISIT in the DROP, KEEP, or RENAME list has never been referenced."]
+  }
+}
