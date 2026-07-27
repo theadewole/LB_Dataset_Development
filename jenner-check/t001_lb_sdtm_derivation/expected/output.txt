@@ -1,0 +1,9 @@
+     param
+----------
+       ALT
+       AST
+HEMOGLOBIN
+   GLUCOSE
+CREATININE
+ PLATELETS
+    SODIUM

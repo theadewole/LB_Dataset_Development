@@ -1,0 +1,168 @@
+NOTE: Option OBS changed to 100.
+NOTE: Library MYSNIP uses 1 concatenated paths.
+NOTE: DATA mysnip.lab
+
+NOTE: Processing inline DATALINES (13 lines)
+
+NOTE: Read 13 rows from DATALINES.
+NOTE: Wrote mysnip.lab (13 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA mysnip.dm
+
+NOTE: Processing inline DATALINES (3 lines)
+
+NOTE: Read 3 rows from DATALINES.
+NOTE: Wrote mysnip.dm (3 rows, 5 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA Lab
+
+
+NOTE: Read 13 rows from mysnip.lab.
+NOTE: Wrote Lab (13 rows, 14 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA Dm
+
+
+NOTE: Read 3 rows from MYSNIP.dm.
+NOTE: Wrote Dm (3 rows, 4 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table DM_LB created.
+NOTE: PROC SQL statement used.
+NOTE: DATA LB1
+
+
+NOTE: Read 13 rows from DM_LB.
+NOTE: Wrote LB1 (13 rows, 17 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: PROC SQL statement used.
+NOTE: DATA LB2
+
+
+NOTE: Read 13 rows from LB1.
+NOTE: Wrote LB2 (13 rows, 19 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA LB3_1
+
+
+NOTE: Read 13 rows from LB2.
+NOTE: Wrote LB3_1 (13 rows, 20 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table LB3 created.
+NOTE: PROC SQL statement used.
+NOTE: DATA LB4
+
+
+NOTE: Read 13 rows from LB3.
+NOTE: Wrote LB4 (13 rows, 30 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA LB5
+
+
+NOTE: Read 13 rows from LB4.
+NOTE: Wrote LB5 (13 rows, 31 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA LB6
+
+WARNING: The variable VISIT in the DROP, KEEP, or RENAME list has never been referenced.
+
+NOTE: Read 13 rows from LB5.
+NOTE: Wrote LB6 (13 rows, 33 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT $Visit defined (122 ranges).
+NOTE: DATA LB7
+
+
+NOTE: Read 13 rows from LB6.
+NOTE: Wrote LB7 (13 rows, 34 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA LB8
+
+
+NOTE: Read 13 rows from LB7.
+NOTE: Wrote LB8 (13 rows, 36 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA LB9
+
+
+NOTE: Read 13 rows from LB8.
+NOTE: Wrote LB9 (13 rows, 39 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA LB10
+
+
+NOTE: Read 13 rows from LB9.
+NOTE: Wrote LB10 (13 rows, 40 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=LB10
+
+NOTE: Read 13 rows from LB10.
+NOTE: Wrote LB10_1 (13 rows, 40 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA LB11
+
+
+NOTE: Read 13 rows from LB10_1.
+NOTE: Wrote LB11 (13 rows, 41 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=LB11
+
+NOTE: Read 13 rows from LB11.
+NOTE: Wrote LB11_1 (13 rows, 41 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA LB12
+
+
+NOTE: Read 13 rows from LB11_1.
+NOTE: Wrote LB12 (13 rows, 42 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SQL 
+
+NOTE: Table LB created.
+NOTE: PROC SQL statement used.
+NOTE: PROC COPY in=work out=mysnip
+
+NOTE: Copying LB to MYSNIP.
+NOTE: 1 member(s) copied.
+NOTE: PROC EXPORT data=work.LB outfile=./LB_Dataset.xlsx
+
+NOTE: Exported 13 rows to ./LB_Dataset.xlsx.
